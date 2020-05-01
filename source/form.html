@@ -5,11 +5,13 @@
     <title>Седона</title>
   </head>
   <body>
-    <div class="container">
-      <header class="page-header">
+
+    <header class="page-header">
+      <div class="container">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Sedona">
         </a>
+
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
@@ -25,166 +27,175 @@
               </li>
               <li class="site-list__item">
                   <a href="#"> Html Academy</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-      <main class="page-photo">
-        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <div class="page-photo__logo">
-          <img class="page-photo__logo" src="img/SEDONA_photo.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
-        </div>
-
-        <header class="page-main__header">
-          <b class="page-main__header"> Оставьте свой отзыв</b>
-          <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </header>
+    <main class="page-photo">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <div class="page-photo__logo">
+        <img class="page-photo__logo" src="img/SEDONA_photo.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
       </div>
 
-      <main class="review">
-        <div class="container review__contact-name">
-
-          <h3 class="review__title">Представьтесь</h3>
-
-          <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-
-          <div class="review__name">
-          <label for="name">Имя*:</label>
-          <input id="name" type="text" name="user-name" placeholder="Петр" required>
-          </div>
-
-          <div class="review__surname">
-            <label for="surname">Фамилия*:</label>
-            <input id="surname" type="text" name="user-surname" placeholder="Иванов" required>
-          </div>
-
-          <div class="review__patronymic">
-            <label for="patronymic">Отчество:</label>
-            <input id="patronymic" type="text" name="user-patronymic" placeholder="Александрович">
-          </div>
-
+      <header class="page-main__header">
+        <div class="container page-main__wrapper">
+          <b class="page-main__title"> Оставьте свой отзыв</b>
+          <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
+      </header>
 
-        <div class="container review__number">
+      <section class="review">
 
-          <h3 class="review__title">Контактная информация</h3>
+        <hr class="horizon-line form-line">
 
-          <div class="review__number">
-          <label for="number">Контактный телефон*:</label>
-          <input id="number" type="tel" name="user-tel" placeholder="Введите телефон" required>
+        <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="container review-contacts">
+            <h3 class="review__title">Представьтесь</h3>
+
+            <div class="review__name">
+              <label for="name">Имя*:</label>
+              <input id="name" type="text" name="user-name" placeholder="Петр" required>
+            </div>
+
+            <div class="review__surname">
+              <label for="surname">Фамилия*:</label>
+              <input id="surname" type="text" name="user-surname" placeholder="Иванов" required>
+            </div>
+
+            <div class="review__patronymic">
+              <label for="patronymic">Отчество:</label>
+              <input id="patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+            </div>
+
           </div>
 
-          <div class="review__mail">
-            <label for="mail">Электронная почта*:</label>
-            <input id="mail" type="text" name="user-mail" placeholder="Введите e-mail" required>
+          <hr class="horizon-line form-line">
+
+          <div class="container review-number">
+            <h3 class="review-number__title">Контактная информация</h3>
+
+            <div class="review-number__number">
+              <label for="number">Контактный телефон*:</label>
+              <input id="number" type="tel" name="user-tel" placeholder="Введите телефон" required>
+            </div>
+
+            <div class="review-number__mail">
+              <label for="mail">Электронная почта*:</label>
+              <input id="mail" type="text" name="user-mail" placeholder="Введите e-mail" required>
+            </div>
+
           </div>
 
-        </div>
+          <hr class="horizon-line form-line">
 
-        <div class="container review__impression">
+          <div class="container review-filter">
+            <h3 class="review-filter__title">Ваше общее впечатление</h3>
 
-          <h3 class="review__title">Ваше общее впечатление</h3>
+            <div class="review-filter__impression-buttons">
+              <fieldset class="review-filter__filter filter">
+							  <ul class="review-filter__radio-list">
+								  <li class="review-filter__radio-item radio-checked">
+									  <input id="radio-item-1" type="radio" name="impression-positively" value="positively" checked>
+									  <label for="radio-item-1">Скорее положительное</label>
+								  </li>
+								  <li class="review-filter__radio-item radio-unchecked">
+									  <input id="radio-item-2" type="radio" name="impression-negatively" value="negatively">
+									  <label for="radio-item-2">Скорее отрицательное</label>
+								  </li>
+								  <li class="review-filter__radio-item radio-unchecked">
+									  <input id="radio-item-3" type="radio" name="impression-unknow" value="unknow">
+									  <label for="radio-item-3">Затрудняюсь ответить</label>
+								  </li>
+							  </ul>
+						  </fieldset>
+            </div>
 
-          <div class="review__impression-buttons">
-            <fieldset class="filter">
-							<ul class="radio-items">
-								<li class="radio-item radio-checked">
-									<input id="radio-item-1" type="radio" name="impression-positively" value="positively" checked>
-									<label for="radio-item-1">Скорее положительное</label>
-								</li>
-								<li class="radio-item radio-unchecked">
-									<input id="radio-item-2" type="radio" name="impression-negatively" value="negatively">
-									<label for="radio-item-2">Скорее отрицательное</label>
-								</li>
-								<li class="radio-item radio-unchecked">
-									<input id="radio-item-3" type="radio" name="impression-unknow" value="unknow">
-									<label for="radio-item-3">Затрудняюсь ответить</label>
-								</li>
-							</ul>
-						</fieldset>
           </div>
 
-        </div>
+          <hr class="horizon-line form-line">
 
-        <div class="container review__attractions">
+          <div class="container review-attractions">
 
-          <h3 class="review__title">Посещенные достопримечательности</h3>
+            <h3 class="review-attractions__title">Посещенные достопримечательности</h3>
 
-          <fieldset class="filter">
-
-							<ul class="checkbox-items">
-
-								<li class="checkbox-item checkbox-checked">
+            <fieldset class="review-attractions-filter filter">
+              <ul class="review-attractions__list">
+								<li class="review-attractions__item checkbox-checked">
 									<input type="checkbox" id="checkbox-item-1" name="bridge" checked>
 									<label for="checkbox-item-1">Мост Дьявола</label>
                 </li>
 
-								<li class="checkbox-item checkbox-checked">
+								<li class="review-attractions__item checkbox-checked">
 									<input type="checkbox" id="checkbox-item-2" name="mountain" checked>
 									<label for="checkbox-item-2">Гора-Колокол</label>
                 </li>
 
-								<li class="checkbox-item checkbox-checked">
+								<li class="review-attractions__item checkbox-checked">
 									<input type="checkbox" id="checkbox-item-3" name="park">
 									<label for="checkbox-item-3">Слайд-парк</label>
                 </li>
 
-								<li class="checkbox-item checkbox-unchecked">
+								<li class="review-attractions__item checkbox-unchecked">
 									<input type="checkbox" id="checkbox-item-4" name="rocks" checked>
 									<label for="checkbox-item-4">Красные скалы</label>
                 </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          </fieldset>
-        </div>
+          <hr class="horizon-line form-line">
 
-        <div class="container emotions">
-          <h3 class="emotions-title">Опишите свои эмоции:</h3>
-          <input id="emotions" type="text" name="emotions" placeholder="Опишите подробно все свои эмоции">
-        </div>
+          <div class="container emotions">
+            <h3 class="emotions-title">Опишите свои эмоции:</h3>
+            <input id="emotions" type="text" name="emotions" placeholder="Опишите подробно все свои эмоции">
+          </div>
 
-        <div class="container review__button">
-        <button class="button button--blue review__button" type="button">Отправить отзыв</button>
-        </div>
-      </form>
+          <div class="container review__button">
+            <button class="button button--blue review__button" type="submit">Отправить отзыв</button>
+          </div>
+        </form>
 
-      </main>
+      </section>
 
-      <footer class="page-footer page-footer--index">
-        <div class="page-footer__column">
-          <b class="page-footer__hashtag">#visitsedona</b>
-        </div>
+    </main>
 
-        <div class="page-footer__column">
-          <ul class="social-links">
-            <li class="social-links__item">
-              <a class="button button--blue social-links__link" href="http://twitter.com" aria-label="twitter">
-                <svg class="social-links__icon" width="17" height="15"></svg>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a class="button button--blue social-links__link" href="http://facebook.com" aria-label="Facebook">
-                <svg class="social-links__icon" width="17" height="15"></svg>
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a class="button button--blue social-links__link" href="http://youtube.com" aria-label="YouTube">
-                <svg class="social-links__icon" width="17" height="15"></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <footer class="page-footer page-footer--index">
+      <div class="page-footer__column">
+        <b class="page-footer__hashtag">#visitsedona</b>
+      </div>
 
-        <div class="page-footer__column">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru" aria-label="HTML Academy">
-            <svg class="page-footer__copyright-icon" width="115" height="41">
-            </svg>
-          </a>
-        </div>
+      <div class="page-footer__column">
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="button button--blue social-links__link" href="http://twitter.com" aria-label="twitter">
+              <svg class="social-links__icon" width="17" height="15"></svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="button button--blue social-links__link" href="http://facebook.com" aria-label="Facebook">
+              <svg class="social-links__icon" width="17" height="15"></svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="button button--blue social-links__link" href="http://youtube.com" aria-label="YouTube">
+              <svg class="social-links__icon" width="17" height="15"></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      </footer>
+      <div class="page-footer__column">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru" aria-label="HTML Academy">
+          <svg class="page-footer__copyright-icon" width="115" height="41">
+          </svg>
+        </a>
+      </div>
+
+    </footer>
 
   </body>
 </html>
