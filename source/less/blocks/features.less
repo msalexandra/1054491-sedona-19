@@ -5,18 +5,31 @@
 
 }
 
+.features__description {
+  display: flex;
+  flex-direction: column;
+}
+
 .white-triangle-features {
   margin-top: 28px;
 }
 
-.features__first-info {
+.features__first-info,
+.features__second-info {
   text-align: center;
   color: @white;
+}
 
+.features__title-main {
+  font-size: @font-uppercase;
+}
+
+.features__title {
+  font-size: @font-uppercase;
 }
 
 .features__title-main--first {
-  margin-top: 25px;
+  margin-top: 36px;
   margin-bottom: 19px;
 }
 
@@ -27,11 +40,13 @@
 
 .features__number-first {
   margin-bottom: 25px;
+  margin-top: 0px;
 }
 
 .features__text-first {
   padding-bottom: 45px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 
@@ -48,12 +63,6 @@ padding-bottom: 0px;
 margin-bottom: 0px;
 }
 
-.features__second-info {
-
- background-color: @bg-color-intro;
- width: @mobile-width;
-
-}
 
 .features__additional {
 
@@ -64,28 +73,115 @@ margin-bottom: 0px;
 .advices {
   list-style: none;
   margin-top: 0px;
-  padding-left: 22px;
+  padding-left: 0px;
 }
 
 
-//Вот тут вопрос
-
- /*.advices__item-wrapper {
+.advices__item-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .advices__title {
   align-self: center;
+  font-size: @font-uppercase;
 }
-*/
 
-.advices__item-icon--house {
-  margin-top: 26px;
+.advices__text {
+  font-size: @font-base;
 }
+
 
 .advices__title--house {
   padding-left: 10px;
-  margin-top: 42px;
 }
 
+//Второй пункт
+
+.features__description-second {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.features__title-main--second {
+  padding-top: 45px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.features__number-second {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.feature__text--second {
+  padding-bottom: 45px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.features__wrapper-image {
+  width: @mobile-width;
+}
+
+.features__image-bridge {
+  margin-bottom: -5px;
+}
+
+//Третий пункт
+
+.features__additional-title--first {
+  margin-top: 0px;
+  padding-top: 33px;
+  margin-bottom: 0px;
+}
+
+.features__additional-number,
+.features__additional-text {
+  .text-basic;
+}
+
+.features__additional-number {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.features__additional-text {
+  margin-top: 25px;
+  margin-bottom: 33px;
+}
+
+.features-additional__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.line-features {
+  height: 1px;
+  border: none;
+  background-color: #d6d6d6;
+  color: #d6d6d6;
+}
+
+.line-features--first {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+//Четвертый пункт
+
+.features__title--four,
+.features__title--five {
+  margin-top: 33px;
+  margin-bottom: 0px;
+}
+
+.line-features--second {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 

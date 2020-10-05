@@ -2,12 +2,13 @@
 
   background-color: @bg-color-body;
   width: @mobile-width;
-
 }
 
 .page-main__header-wrapper {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 46px;
+  margin-top: 45px;
 }
 
 .page-main__heading {
@@ -20,4 +21,51 @@
 .page-main__text-basic {
   .text-basic;
   margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+//Страничка с фото
+
+.page-main__header-wrapper--photo,
+.page-main__header-wrapper--form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-photo__heading,
+.main-form__heading {
+  margin-top: 45px;
+}
+
+.main-photo__text-basic {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.main-form__text-basic {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.main-photo__line-wrapper,
+.main-form__line-wrapper {
+  width: @mobile-width;
+}
+
+.photo-line,
+.form-line {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 1px;
+  border: none;
+  background-color: #e5e5e5;
+  color: #e5e5e5;
+}
+
+
+//Тут стили по страничке с формой
+
+.page-main__header-wrapper--form {
+  margin-bottom: 25px;
 }

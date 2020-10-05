@@ -6,17 +6,14 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="page-header header-photo">
 
-      <div class="container header-wrapper">
-        <a class="logo page-header__logo">
-          <img  class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Sedona">
-        </a>
+    <header class="page-header">
+      <div class="header-wrapper">
 
-        <nav class="main-nav page-header__main-nav nav-photo">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav page-header__main-nav nav-index">
+         <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
 
-          <div class="container main-nav__wrapper">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="index.html">Главная</a>
@@ -33,20 +30,37 @@
             </ul>
           </div>
         </nav>
+
+          <div class="page-header__logo-burger">
+
+          <a class="logo page-header__logo" href="index.html">
+            <img  class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="83">
+          </a>
+          <div class="burger-menu">
+          <button class="main-nav__toggle" type="button" title="Открыть меню" aria-label="Открыть меню"></button>
+          </div>
+        </div>
+
       </div>
     </header>
 
     <main class="page-main main-photo">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 
-      <div class="container main-photo__wrapper-intro">
-        <img class="main-photo__text" src="img/SEDONA_photo.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
 
-        <header class="main-photo__header">
+        <div class="page-main__wrapper-intro page-main__intro-photo">
+            <img class="container page-main__text-photo" src="img/SEDONA.svg" width="229" height="39" alt="Седона">
+            <img class="page-main__triangle-photo" src="img/intro-triangle.svg" width="320" height="26">
+
+        </div>
+
+        <header class="main-photo__header header">
+          <div class="container page-main__header-wrapper--photo">
           <b class="main-photo__heading"> Фото и видео </b>
-          <p class="main-photo__text">Не можете решиться на путешествие <br> из-за курса? Фотографии помогут <br> вам забыть о политике и экономике.</p>
+          <p class="main-photo__text-basic">Не можете решиться на путешествие <br> из-за курса? Фотографии помогут <br> вам забыть о политике и экономике.</p>
+          </div>
         </header>
-      </div>
+
 
       <div class="main-photo__line-wrapper line">
         <hr class="line__horizon photo-line">
@@ -55,12 +69,18 @@
       <section class="gallery">
         <h2 class="visually-hidden">Галерея</h2>
 
-        <div class="container gallery__wrapper">
+        <div class="container gallery__wrapper gallery__wrapper-vastness">
           <img class="gallery__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
           <h3 class="gallery__title">Неродные просторы</h3>
           <p class="gallery__text">Автор фото: Борис</p>
-          <svg class="gallery__icon like-icon" width="23" height="21"></svg> <!-- нет вставки svg файла -->
+
+          <div class="gallery__wrapper-appraisal gallery__wrapper-photo">
+          <svg class="gallery__icon like-icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="21" viewBox="0 0 23 21">
+            <image id="like-icon.svg" class="cls-1" width="23" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAQAAAAH670gAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkBB4HOxVQZ2gOAAAA1ElEQVQoz43SIXLDMBCF4c8ZmwQ4ILQhpiG5QU+Q0/YOoUUFJSkwMSloQImAAmxlGsdq9AQ0u/q12tknctp51RDv1ioLH7T28/QqC8O6BE8w4Tk+whfw/QxP8Dv4+R9P8MlmuXp9FyU4aMGRKp0FH7GvHafwbdpPAlP1v2oc9PVDepzG5yy7sadqHnH3XUeklmLIuTrXOjf3ZXXji0V41WpxLq3e4TcORXjV2OGrtPcOQV+Kv2CIgfknwM3l1Mq4nZcGOWTq9/GSLm+n1OjjdomON4+vgCs1q6pcTuYAAAAASUVORK5CYII="/>
+          </svg>
+
           <p class="gallery__number">1350</p>
+        </div>
         </div>
 
         <div class="main-photo__line-wrapper line">
@@ -71,8 +91,13 @@
           <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
           <h3 class="gallery__title">Местная растительность</h3>
           <p class="gallery__text">Автор фото: Сергей</p>
-          <svg class="gallery__icon like-icon" width="23" height="21"></svg> <!-- нет вставки svg файла -->
+
+          <div class="gallery__wrapper-appraisal gallery__wrapper-photo">
+          <svg class="gallery__icon like-icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="21" viewBox="0 0 23 21">
+            <image id="like-icon.svg" class="cls-1" width="23" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAQAAAAH670gAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkBB4HOxVQZ2gOAAAA1ElEQVQoz43SIXLDMBCF4c8ZmwQ4ILQhpiG5QU+Q0/YOoUUFJSkwMSloQImAAmxlGsdq9AQ0u/q12tknctp51RDv1ioLH7T28/QqC8O6BE8w4Tk+whfw/QxP8Dv4+R9P8MlmuXp9FyU4aMGRKp0FH7GvHafwbdpPAlP1v2oc9PVDepzG5yy7sadqHnH3XUeklmLIuTrXOjf3ZXXji0V41WpxLq3e4TcORXjV2OGrtPcOQV+Kv2CIgfknwM3l1Mq4nZcGOWTq9/GSLm+n1OjjdomON4+vgCs1q6pcTuYAAAAASUVORK5CYII="/>
+          </svg>
           <p class="gallery__number">143</p>
+        </div>
         </div>
 
         <div class="main-photo__line-wrapper line">
@@ -81,22 +106,32 @@
 
         <div class="container gallery__north">
           <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
-          <h3 class="gallery__title">Местная растительность</h3>
-          <p class="gallery__text">Автор фото: Сергей</p>
-          <svg class="gallery__icon like-icon" width="23" height="21"></svg> <!-- нет вставки svg файла -->
+          <h3 class="gallery__title">Дорога на север</h3>
+          <p class="gallery__text">Автор фото: Петр</p>
+
+          <div class="gallery__wrapper-appraisal gallery__wrapper-photo">
+          <svg class="gallery__icon like-icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="21" viewBox="0 0 23 21">
+            <image id="like-icon.svg" class="cls-1" width="23" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAQAAAAH670gAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkBB4HOxVQZ2gOAAAA1ElEQVQoz43SIXLDMBCF4c8ZmwQ4ILQhpiG5QU+Q0/YOoUUFJSkwMSloQImAAmxlGsdq9AQ0u/q12tknctp51RDv1ioLH7T28/QqC8O6BE8w4Tk+whfw/QxP8Dv4+R9P8MlmuXp9FyU4aMGRKp0FH7GvHafwbdpPAlP1v2oc9PVDepzG5yy7sadqHnH3XUeklmLIuTrXOjf3ZXXji0V41WpxLq3e4TcORXjV2OGrtPcOQV+Kv2CIgfknwM3l1Mq4nZcGOWTq9/GSLm+n1OjjdomON4+vgCs1q6pcTuYAAAAASUVORK5CYII="/>
+          </svg>
           <p class="gallery__number">96</p>
+          </div>
         </div>
 
         <div class="main-photo__line-wrapper line">
           <hr class="line__horizon photo-line">
         </div>
 
-        <div class="container gallery__north">
+        <div class="container gallery__bridge">
           <img class="gallery__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
           <h3 class="gallery__title">Мост дьявола</h3>
           <p class="gallery__text">Автор фото: Антон</p>
-          <svg class="gallery__icon like-icon" width="23" height="21"></svg> <!-- нет вставки svg файла -->
+
+          <div class="gallery__wrapper-appraisal gallery__wrapper-photo">
+          <svg class="gallery__icon like-icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="21" viewBox="0 0 23 21">
+            <image id="like-icon.svg" class="cls-1" width="23" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAQAAAAH670gAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkBB4HOxVQZ2gOAAAA1ElEQVQoz43SIXLDMBCF4c8ZmwQ4ILQhpiG5QU+Q0/YOoUUFJSkwMSloQImAAmxlGsdq9AQ0u/q12tknctp51RDv1ioLH7T28/QqC8O6BE8w4Tk+whfw/QxP8Dv4+R9P8MlmuXp9FyU4aMGRKp0FH7GvHafwbdpPAlP1v2oc9PVDepzG5yy7sadqHnH3XUeklmLIuTrXOjf3ZXXji0V41WpxLq3e4TcORXjV2OGrtPcOQV+Kv2CIgfknwM3l1Mq4nZcGOWTq9/GSLm+n1OjjdomON4+vgCs1q6pcTuYAAAAASUVORK5CYII="/>
+          </svg>
           <p class="gallery__number">254</p>
+          </div>
         </div>
 
         </section>
@@ -109,38 +144,51 @@
 
           <div class="container video__wrapper-title">
             <h3 class="video__title">Все еще сомневаетесь?</h3>
-            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <p class="video__text">Смотрите видеопрезентацию и <br> скорее за билетами, пока они не <br> подорожали в очередной раз!</p>
           </div>
 
           <div class="video__wrapper">
-            <!-- тут будет видео -->
+            <video class="video__video" width="320" height="200" controls preload="metadata" poster="img/video-poster.jpg">
+
+            </video>
           </div>
 
         </section>
     </main>
 
-    <footer class="footer footer--photo container">
-
+    <footer class="footer footer--index">
+      <div class="footer--index-wrapper container">
       <div class="footer__wrapper-hashtag">
         <b class="footer__hashtag">#visitsedona</b>
       </div>
 
-      <div class="footer__social-link">
+      <div class="footer__social-link social-link">
         <ul class="footer__link-items">
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__twitter">
             <a class="button button--blue button-social" href="http://twitter.com" aria-label="twitter">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                  <image id="icon-twitter.svg" width="18" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAQAAACI04Q8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4RORWCahH/AAAAm0lEQVQoz32RURWCQBRE7yHBRiACEYyADYhABBpwTEAENAERtAE2gAbXDxTdFbj7OztnZh4GgySvcVJ1MFhaYePdIpJ0xrTYqJP1KilMGTNmINAyUpEDJTEPzunPyTHxaQT7d8g9TpJxI3DEDFttotAiGXDhuetzhcUpHKTKRZZtyr9Oa7OvaFvWfQbGftPl9wZgsEq2Gqzjo78AGIVMdBRlPCcAAAAASUVORK5CYII="/>
+              </svg>
+              </div>
             </a>
-
           </li>
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__facebook">
             <a class="button button--blue button-social" href="http://facebook.com" aria-label="Facebook">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18"width="17" height="15">
+                  <image id="icon-facebook.svg" width="9" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAQAAAAjiTzDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4ROh9JkqsiAAAAW0lEQVQY07WNQRGAMBADt0wFVEolnCRwAMpAAg6QgITwuMK0ffXD/rKTSRBCaNalgotVFa7uWkUgk3A2DkDIvoIJETEyLwmDINExwYAKMmAvaeH0R9rHsa2f1QOaa0/UgAJXogAAAABJRU5ErkJggg=="/>
+                </svg>
+            </div>
             </a>
           </li>
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__youtube">
             <a class="button button--blue button-social" href="http://youtube.com" aria-label="YouTube">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="14" viewBox="0 0 20 14">
+                  <image id="icon-youtube.svg" width="20" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4SBBHtqSMBAAAAZklEQVQoz63SQRGAMAxE0V8GAZWAhErAQpWABFDaOigOljNtZpoDe8y8Q7ITlFQ0S1EKKmzMU4PkYMDiYyPM3Dym7NbehaIutf4eC2Jh946rMYucHMTvsK8nk0ZkwT96rC5X8T7FC+C9oZoMbr76AAAAAElFTkSuQmCC"/>
+                </svg>
+              </div>
             </a>
           </li>
         </ul>
@@ -149,12 +197,12 @@
       <div class="footer__developer developer">
         <span class="footer__copyright-text">Разработано</span>
         <a class="footer__copyright-link" href="https://htmlacademy.ru" aria-label="HTML Academy">
-          <svg class="footer__copyright-icon" width="115" height="41">
-          </svg>
+          <img  class="footer__logo-academy" src="img/htmlacademy1.svg" alt="Логотип Академии" width="27" height="34">
         </a>
+      </div>
       </div>
 
     </footer>
-
   </body>
   </html>
+

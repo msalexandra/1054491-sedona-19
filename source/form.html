@@ -6,17 +6,14 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="page-header header-form">
 
-      <div class="container header-wrapper">
-        <a class="logo page-header__logo">
-          <img  class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Sedona">
-        </a>
+    <header class="page-header">
+      <div class="header-wrapper">
 
-        <nav class="main-nav page-header__main-nav nav-form">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav page-header__main-nav nav-index">
+         <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
 
-          <div class="container main-nav__wrapper">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="index.html">Главная</a>
@@ -33,26 +30,40 @@
             </ul>
           </div>
         </nav>
+
+          <div class="page-header__logo-burger">
+
+          <a class="logo page-header__logo" href="index.html">
+            <img  class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="83">
+          </a>
+          <div class="burger-menu">
+          <button class="main-nav__toggle" type="button" title="Открыть меню" aria-label="Открыть меню"></button>
+          </div>
+        </div>
+
       </div>
     </header>
+
 
     <main class="page-main main-form">
       <h1 class="visually-hidden">Оставьте отзыв</h1>
 
-      <div class="container main-form__wrapper-intro">
-        <img class="main-form__text" src="img/SEDONA_photo.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
+      <div class="page-main__wrapper-intro page-main__intro-form">
+        <img class="container page-main__text-form" src="img/SEDONA.svg" width="229" height="39" alt="Седона">
+        <img class="page-main__triangle-form" src="img/intro-triangle.svg" width="320" height="26">
+      </div>
 
-        <header class="main-form__header">
+        <header class="container page-main__header-wrapper--form">
           <b class="main-form__heading"> Оставьте свой отзыв </b>
-          <p class="main-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="main-form__text-basic">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
+
+
+      <div class="main-form__line-wrapper line">
+        <hr class="line__horizon form-line">
       </div>
 
       <section class="review">
-
-        <div class="main-form__line-wrapper line">
-          <hr class="line__horizon form-line">
-        </div>
 
         <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="container review__wrapper-contacts">
@@ -80,7 +91,7 @@
           </div>
 
           <div class="container review__wrapper-number">
-            <h3 class="review__title">Контактная информация</h3>
+            <h3 class="review__title review__title-number ">Контактная информация</h3>
 
             <div class="review__number">
               <label for="number">Контактный телефон*:</label>
@@ -94,7 +105,7 @@
 
           </div>
 
-          <div class="main-form__line-wrapper line">
+          <div class="line-wrapper-mail line">
             <hr class="line__horizon form-line">
           </div>
 
@@ -102,18 +113,18 @@
             <h3 class="review__filter-title">Ваше общее впечатление</h3>
 
             <div class="review__impression-buttons">
-              <fieldset class="review__filter filter">
+              <fieldset class="review__impression filter">
                 <ul class="review__radio-list">
                   <li class="review__radio-item radio-checked">
-                    <input id="radio-item-1" type="radio" name="impression-positively" value="positively" checked>
+                    <input id="radio-item-1" type="radio" name="impression" value="positively" checked>
                     <label for="radio-item-1">Скорее положительное</label>
                   </li>
                   <li class="review__radio-item radio-unchecked">
-                    <input id="radio-item-2" type="radio" name="impression-negatively" value="negatively">
+                    <input id="radio-item-2" type="radio" name="impression" value="negatively">
                     <label for="radio-item-2">Скорее отрицательное</label>
                   </li>
                   <li class="review__radio-item radio-unchecked">
-                    <input id="radio-item-3" type="radio" name="impression-unknow" value="unknow">
+                    <input id="radio-item-3" type="radio" name="impression" value="unknow">
                     <label for="radio-item-3">Затрудняюсь ответить</label>
                   </li>
                 </ul>
@@ -122,7 +133,7 @@
 
           </div>
 
-          <div class="main-form__line-wrapper line">
+          <div class="review__attractions-line line">
             <hr class="line__horizon form-line">
           </div>
 
@@ -130,7 +141,7 @@
 
             <h3 class="review__title attractions-title">Посещенные достопримечательности</h3>
 
-            <fieldset class="review__filter filter">
+            <fieldset class=" review__attractions-filter filter">
               <ul class="review__list attractions-list">
                 <li class="review__item attractions-item checkbox-checked">
                   <input type="checkbox" id="checkbox-item-1" name="bridge" checked>
@@ -143,19 +154,19 @@
                 </li>
 
                 <li class="review__item attractions-item checkbox-checked">
-                  <input type="checkbox" id="checkbox-item-3" name="park">
+                  <input type="checkbox" id="checkbox-item-3" name="park" checked>
                   <label for="checkbox-item-3">Слайд-парк</label>
                 </li>
 
                 <li class="review__item attractions-item checkbox-unchecked">
-                  <input type="checkbox" id="checkbox-item-4" name="rocks" checked>
+                  <input type="checkbox" id="checkbox-item-4" name="rocks" unchecked>
                   <label for="checkbox-item-4">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
           </div>
 
-          <div class="main-form__line-wrapper line">
+          <div class="line__emotions-wrapper line">
             <hr class="line__horizon form-line">
           </div>
 
@@ -164,35 +175,46 @@
             <input id="emotions" type="text" name="emotions" placeholder="Опишите подробно все свои эмоции">
           </div>
 
-          <div class="container review__button">
+          <div class="container review__button-wrapper">
             <button class="button button--blue review__button" type="submit">Отправить отзыв</button>
           </div>
         </form>
       </section>
     </main>
 
-    <footer class="footer footer--form container">
-
+    <footer class="footer footer--index footer--form">
+      <div class="footer--index-wrapper container">
       <div class="footer__wrapper-hashtag">
         <b class="footer__hashtag">#visitsedona</b>
       </div>
 
-      <div class="footer__social-link">
+      <div class="footer__social-link social-link">
         <ul class="footer__link-items">
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__twitter">
             <a class="button button--blue button-social" href="http://twitter.com" aria-label="twitter">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                  <image id="icon-twitter.svg" width="18" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAQAAACI04Q8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4RORWCahH/AAAAm0lEQVQoz32RURWCQBRE7yHBRiACEYyADYhABBpwTEAENAERtAE2gAbXDxTdFbj7OztnZh4GgySvcVJ1MFhaYePdIpJ0xrTYqJP1KilMGTNmINAyUpEDJTEPzunPyTHxaQT7d8g9TpJxI3DEDFttotAiGXDhuetzhcUpHKTKRZZtyr9Oa7OvaFvWfQbGftPl9wZgsEq2Gqzjo78AGIVMdBRlPCcAAAAASUVORK5CYII="/>
+              </svg>
+              </div>
             </a>
-
           </li>
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__facebook">
             <a class="button button--blue button-social" href="http://facebook.com" aria-label="Facebook">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18"width="17" height="15">
+                  <image id="icon-facebook.svg" width="9" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAQAAAAjiTzDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4ROh9JkqsiAAAAW0lEQVQY07WNQRGAMBADt0wFVEolnCRwAMpAAg6QgITwuMK0ffXD/rKTSRBCaNalgotVFa7uWkUgk3A2DkDIvoIJETEyLwmDINExwYAKMmAvaeH0R9rHsa2f1QOaa0/UgAJXogAAAABJRU5ErkJggg=="/>
+                </svg>
+            </div>
             </a>
           </li>
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__youtube">
             <a class="button button--blue button-social" href="http://youtube.com" aria-label="YouTube">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="14" viewBox="0 0 20 14">
+                  <image id="icon-youtube.svg" width="20" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4SBBHtqSMBAAAAZklEQVQoz63SQRGAMAxE0V8GAZWAhErAQpWABFDaOigOljNtZpoDe8y8Q7ITlFQ0S1EKKmzMU4PkYMDiYyPM3Dym7NbehaIutf4eC2Jh946rMYucHMTvsK8nk0ZkwT96rC5X8T7FC+C9oZoMbr76AAAAAElFTkSuQmCC"/>
+                </svg>
+              </div>
             </a>
           </li>
         </ul>
@@ -201,11 +223,11 @@
       <div class="footer__developer developer">
         <span class="footer__copyright-text">Разработано</span>
         <a class="footer__copyright-link" href="https://htmlacademy.ru" aria-label="HTML Academy">
-          <svg class="footer__copyright-icon" width="115" height="41">
-          </svg>
+          <img  class="footer__logo-academy" src="img/htmlacademy1.svg" alt="Логотип Академии" width="27" height="34">
         </a>
+      </div>
       </div>
 
     </footer>
   </body>
-</html>
+  </html>

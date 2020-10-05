@@ -83,8 +83,8 @@
             <img class="features__image" src="img/photo-city.jpg" width="320" height="260" alt="Изображение Седоны">
           </div>
 
-          <div class="container features__list">
-            <ul class="advices">
+          <div class="features__list">
+            <ul class="container advices">
 
               <li class="advices__item advices__item--house">
                 <div class="advices__item-wrapper">
@@ -115,36 +115,48 @@
         </div>
 
         <div class="features__second-info">
-          <div class="container features__description">
-            <h3 class="features__title features__title-main">Там есть мост дьявола</h3>
-            <p class="features__number"> &ndash; №2 &ndash;</p>
-            <p class="features__text"> Да, по нему можно пройти! Если вы <br> осмелитесь, конечно</p>
+          <div class="features__description features__description-second features--blue">
+            <div class="container">
+            <h3 class="features__title features__title-main features__title-main--second">Там есть мост дьявола</h3>
+            <p class="features__number features__number-second"> &ndash; №2 &ndash;</p>
+            <p class="features__text feature__text--second"> Да, по нему можно пройти! Если вы <br> осмелитесь, конечно</p>
             <!--или тег br-->
           </div>
+          </div>
 
-          <div class="features__wrapper-image">
+          <div class="features__wrapper-image features__image-bridge">
             <img class="features__image" src="img/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола">
           </div>
         </div>
 
         <div class="features__additional features-additional">
-          <div class="container features-additional__item">
-            <h3 class="features__title">Небольшая площадь</h3>
-            <p class="features__number">&ndash; №3 &ndash;</p>
-            <p class="features__text">Все интересные места находятся очень близко</p>
+          <div class="container features__additional-wrapper">
+          <div class="features-additional__item">
+            <h3 class="features__title features__additional-title--first">Небольшая площадь</h3>
+            <p class="features__number features__additional-number">&ndash; №3 &ndash;</p>
+            <p class="features__text features__additional-text">Все интересные места находятся очень близко</p>
+          </div>
+
+          <div class="main-index__line-wrapper line">
+            <hr class="line__horizon line-features line-features--first">
           </div>
 
           <div class="features-additional__item">
-            <h3 class="features__title">Красивая дорога</h3>
-            <p class="features__number">&ndash; №4 &ndash;</p>
-            <p class="features__text"> Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="features__title features__title--four">Красивая дорога</h3>
+            <p class="features__number features__additional-number">&ndash; №4 &ndash;</p>
+            <p class="features__text features__additional-text"> Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+
+          <div class="main-index__line-wrapper line">
+            <hr class="line__horizon line-features line-features--second">
           </div>
 
           <div class="features-additional__item">
-            <h3 class="features__title">Мало туристов</h3>
-            <p class="features__number">&ndash; №5 &ndash;</p>
-            <p class="features__text">Большинство едет в Гранд Каньон и толпится там</p>
+            <h3 class="features__title features__title--five">Мало туристов</h3>
+            <p class="features__number features__additional-number">&ndash; №5 &ndash;</p>
+            <p class="features__text features__additional-text">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
+        </div>
         </div>
       </section>
 
@@ -152,7 +164,7 @@
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
 
         <div class="container search-hotel__wrapper">
-          <b class="search-hotel__title">Заинтересовались?</b>
+          <h3 class="search-hotel__title search-hotel__title-index">Заинтересовались?</h3>
           <p class="search-hotel__text">Укажите предполагаемые даты <br> поездки, и мы покажем вам лучшие <br> предложения гостиниц в седоне </p>
           <button class="button button--blue search-hotel__button">Найти гостиницу</button>
         </div>
@@ -164,27 +176,39 @@
       </section>
     </main>
 
-    <footer class="footer footer--index container">
+    <footer class="footer footer--index">
+      <div class="footer--index-wrapper container">
       <div class="footer__wrapper-hashtag">
         <b class="footer__hashtag">#visitsedona</b>
       </div>
 
       <div class="footer__social-link social-link">
         <ul class="footer__link-items">
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__twitter">
             <a class="button button--blue button-social" href="http://twitter.com" aria-label="twitter">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                  <image id="icon-twitter.svg" width="18" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAQAAACI04Q8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4RORWCahH/AAAAm0lEQVQoz32RURWCQBRE7yHBRiACEYyADYhABBpwTEAENAERtAE2gAbXDxTdFbj7OztnZh4GgySvcVJ1MFhaYePdIpJ0xrTYqJP1KilMGTNmINAyUpEDJTEPzunPyTHxaQT7d8g9TpJxI3DEDFttotAiGXDhuetzhcUpHKTKRZZtyr9Oa7OvaFvWfQbGftPl9wZgsEq2Gqzjo78AGIVMdBRlPCcAAAAASUVORK5CYII="/>
+              </svg>
+              </div>
             </a>
-
           </li>
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__facebook">
             <a class="button button--blue button-social" href="http://facebook.com" aria-label="Facebook">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18"width="17" height="15">
+                  <image id="icon-facebook.svg" width="9" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAQAAAAjiTzDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4ROh9JkqsiAAAAW0lEQVQY07WNQRGAMBADt0wFVEolnCRwAMpAAg6QgITwuMK0ffXD/rKTSRBCaNalgotVFa7uWkUgk3A2DkDIvoIJETEyLwmDINExwYAKMmAvaeH0R9rHsa2f1QOaa0/UgAJXogAAAABJRU5ErkJggg=="/>
+                </svg>
+            </div>
             </a>
           </li>
-          <li class="footer__link-item">
+          <li class="footer__link-item footer__youtube">
             <a class="button button--blue button-social" href="http://youtube.com" aria-label="YouTube">
-              <svg class="button-social__icon" width="17" height="15"></svg>
+              <div class="button-social__wrapper">
+                <svg class="button-social__icon footer_icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="14" viewBox="0 0 20 14">
+                  <image id="icon-youtube.svg" width="20" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4SBBHtqSMBAAAAZklEQVQoz63SQRGAMAxE0V8GAZWAhErAQpWABFDaOigOljNtZpoDe8y8Q7ITlFQ0S1EKKmzMU4PkYMDiYyPM3Dym7NbehaIutf4eC2Jh946rMYucHMTvsK8nk0ZkwT96rC5X8T7FC+C9oZoMbr76AAAAAElFTkSuQmCC"/>
+                </svg>
+              </div>
             </a>
           </li>
         </ul>
@@ -193,9 +217,9 @@
       <div class="footer__developer developer">
         <span class="footer__copyright-text">Разработано</span>
         <a class="footer__copyright-link" href="https://htmlacademy.ru" aria-label="HTML Academy">
-          <svg class="footer__copyright-icon" width="115" height="41">
-          </svg>
+          <img  class="footer__logo-academy" src="img/htmlacademy1.svg" alt="Логотип Академии" width="27" height="34">
         </a>
+      </div>
       </div>
 
     </footer>
