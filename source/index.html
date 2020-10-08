@@ -11,13 +11,23 @@
       <div class="header-wrapper">
 
         <nav class="main-nav page-header__main-nav nav-index">
-         <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
 
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a href="">Главная</a>
+
+              <li class="main-nav__item main-nav__item--flex main-nav__item--active">
+                <a href="" class="menu-index">Главная</a>
+
+                  <a class="main-nav__close" href="" aria-label="Закрыть меню">
+                    <div class="main-nav__btn-wrapper">
+                      <svg class="main-nav__btn-crose" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="22" viewBox="0 0 23 22">
+                        <image id="icon-cross" width="23" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAQAAACBf8+OAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCBYAHBT4rjmWAAAAl0lEQVQ4y53TURGFIBCF4TMm2ChEIopNyGACIxDFCL8P6r2AqzPr8oTzHRFkhTAqBb2OQsXQgYHXQAGgYjrxOXWotWLSoquSVpn6Mq1Kv9kiRIaHFdo3Q0bHYz9wwxf3Ag7+8zGQPdzyPoCHey4S20A3UivGU+4DA0aTYvX9Y0JbDR1k6DeFLkHois2P+B6Yg+0Rbr5Qa+9M85osQCcRIAAAAABJRU5ErkJggg=="/>
+                      </svg>
+                  </div>
+                  </a>
+
               </li>
+
               <li class="main-nav__item">
                 <a href="photo.html">Фото и видео</a>
               </li>
@@ -37,7 +47,19 @@
             <img  class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="83">
           </a>
           <div class="burger-menu">
-          <button class="main-nav__toggle" type="button" title="Открыть меню" aria-label="Открыть меню"></button>
+
+          <a class="page-header__toggle page-header__burger" href="" aria-label="Открыть меню">
+            <div class="page-header__btn-wrapper">
+              <svg class="page-header__btn-burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="21" viewBox="0 0 23 21">
+                <image id="icon-menu.svg" width="23" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAVBAMAAABfzGiYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEWBs9L///+Bs9KBs9IAAADzssMqAAAAA3RSTlMAAIAXzkf+AAAAAWJLR0QEj2jZUQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+QIFgAbOfIw8yQAAAAkSURBVBjTYzBGAAMGIjkwICgoKEAsRwkBFIi1B0UPOZaS4TkAvSgfcDvfaigAAAAASUVORK5CYII="/>
+              </svg>
+          </div>
+          </a>
+
+
+
+
+
           </div>
         </div>
 
@@ -91,24 +113,24 @@
                 <img  class="advices__item-icon advices__item-icon--house" src="img/icon-house.svg" alt="Иконка дома" width="39" height="37">
                 <b class="advices__title advices__title--house"> Жилье</b>
               </div>
-                <p class="advices__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="advices__text advices__text--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
 
 
               <li class="advices__item advices__item--gift">
                 <div class="advices__item-wrapper">
                 <img  class="advices__item-icon advices__item-icon--gift" src="img/icon-gift.svg" alt="Иконка подарка" width="32" height="38">
-                <b class="advices__title">Сувениры</b>
+                <b class="advices__title advices__title--gift">Сувениры</b>
                 </div>
-                <p  class="advices__text">Не только китайского, но и местного производства!</p>
+                <p  class="advices__text advices__text--gift">Не только китайского, но и местного производства!</p>
               </li>
 
               <li class="advices__item advices__item--food">
                 <div class="advices__item-wrapper">
                 <img  class="advices__item-icon advices__item-icon--burger" src="img/icon-burger.svg" alt="Иконка бургера" width="40" height="35">
-                <b class="advices__title">Еда</b>
+                <b class="advices__title advices__title--food">Еда</b>
                 </div>
-                <p class="advices__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advices__text advices__text--food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </div>
@@ -172,7 +194,8 @@
 
       <section class="map page-main__map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__image" src="img/map-mobile.png" width="320" height="350" alt="Карта">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A698f365aca19b83c818d70c9c556a57a6d6971e5b57a45ac96f58843e7f28a18&amp;width=320&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+       <!-- <img class="map__image" src="img/map-mobile.png" width="320" height="350" alt="Карта"> -->
       </section>
     </main>
 
@@ -223,5 +246,7 @@
       </div>
 
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
   </html>

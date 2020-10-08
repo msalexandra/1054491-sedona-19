@@ -4,6 +4,21 @@
   height: 223px;
 }
 
+//Для всплывающего меню
+
+.page-header__main-nav {
+
+display: none;
+position: fixed;
+width: @mobile-width;
+height: 223px;
+left: 0px;
+right: 0px;
+//margin: 0 auto;
+z-index: 20;
+}
+
+
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
@@ -19,6 +34,10 @@
   margin-bottom: 0px;
   font-size: @font-uppercase;
 
+}
+
+.menu-index {
+  margin-left: 123px;
 }
 
 .main-nav__list a {
@@ -39,15 +58,6 @@
 }
 
 
-/*
-
-.main-nav__item a:focus {
-
-
-}
-
-*/
-
 .main-nav__item:active,
 .main-nav__item--active {
   background-color: @bg-color-button-form--active;
@@ -60,4 +70,9 @@
   color: #88b6d1;
 }
 
+//Меню закрыть
 
+.main-nav__close {
+  padding-left: 82px;
+  margin-top: 9px;
+}
