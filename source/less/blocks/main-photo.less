@@ -3,15 +3,9 @@
   padding-top: 90px;
 }
 
-.page-main__text-photo,
-.page-main__text-form {
-  margin-top: 53px;
-}
 
-.page-main__triangle-photo,
-.page-main__triangle-form {
-  margin-top: 38px;
-}
+
+@media (max-width: 768px) {
 
 .main-photo__header {
   width: @mobile-width;
@@ -29,3 +23,21 @@
   font-size: 14px;
 }
 
+}
+
+@media (min-width: 768px), handlend and (orientation:landscape) {
+  .main-photo__heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 77px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+.main-photo__header {
+  background-color: #ffffff;
+}
+
+}

@@ -1,9 +1,28 @@
+@media (max-width: 768px) {
+
 .page-header {
 
   background-color: @bg-color-body;
   width: @mobile-width;
 }
 
+}
+
+@media (min-width: 768px) {
+
+  .page-header {
+    background-color: @bg-color-body;
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    width: 94%;
+  }
+}
+
+/*
 
 
 .main-nav__toggle {
@@ -28,6 +47,7 @@ cursor: pointer;
 }
 
 .page-header__logo-burger {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   height: 56px;
@@ -43,3 +63,4 @@ cursor: pointer;
   margin-top: 17px;
 
 }
+*/

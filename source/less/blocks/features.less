@@ -1,3 +1,4 @@
+@media (max-width: 768px) {
 .features--blue {
 
   background-color: @bg-color-intro;
@@ -8,10 +9,6 @@
 .features__description {
   display: flex;
   flex-direction: column;
-}
-
-.white-triangle-features {
-  margin-top: 28px;
 }
 
 .features__first-info,
@@ -49,6 +46,11 @@
   margin-top: 0px;
 }
 
+.features__image {
+  width: 320px;
+  height: 260px;
+}
+
 
 .features__list {
   background-color: @bg-color-body;
@@ -68,6 +70,9 @@ margin-bottom: 0px;
 
   background-color: @bg-color-features;
   width: @mobile-width;
+}
+.features__text-first--tablet {
+  display: none;
 }
 
 .advices {
@@ -106,9 +111,23 @@ margin-bottom: 0px;
 
 .advices__item-icon--house {
   margin-left: 2px;
+  width: 39px;
+  height: 37px;
 }
+
+.advices__item-icon--burger {
+  width: 40px;
+  height: 35px;
+}
+
+.advices__text--tablet {
+  display: none;
+}
+
 .advices__item-icon--gift {
   margin-left: 5px;
+  width: 32px;
+  height: 38px;
 }
 
 .advices__title--gift {
@@ -170,7 +189,15 @@ margin-bottom: 0px;
   margin-bottom: -5px;
 }
 
+.feature__text--second-tablet {
+  display: none;
+}
+
 //Третий пункт
+
+.features__additional-tablet {
+  display: none;
+}
 
 .features__additional-title--first {
   margin-top: 0px;
@@ -226,3 +253,275 @@ margin-bottom: 0px;
   margin-bottom: 0px;
 }
 
+}
+
+@media (min-width: 768px), handlend and (orientation:landscape) {
+
+  .features {
+    margin-top: 0px;
+  }
+
+  .white-triangle-features {
+    display: none;
+  }
+
+  .features__text-first--mobile {
+    display: none;
+  }
+
+  .features--first {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  .features__first-info {
+    background-color: @bg-color-intro;
+    width: 33%;
+    height: 256px;
+    min-width: 256px;
+
+
+  }
+
+  .features__description--first {
+    color: @white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    min-width: 256px;
+  }
+
+  .features__title {
+    font-size: @font-uppercase-tablet;
+  }
+
+  .features__title-main--first {
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .features__number-first {
+    margin-top: 19px;
+    margin-bottom: 0px;
+  }
+  .features__number {
+    font-size: @font-base-tablet;
+  }
+
+  .features__text {
+    font-size: @font-base-tablet;
+  }
+
+  .features__text-first {
+    margin-top: 32px;
+    margin-bottom: 0px;
+
+  }
+
+  .features__wrapper-image {
+   width: 67%;
+  }
+
+  .features__image-tablet {
+    height: 256px;
+  }
+
+  .features__image {
+    width: 100%;
+    height: 256px;
+  }
+
+  //Список
+
+  .advices {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 57px;
+  }
+
+  .features__list {
+    width: 100%;
+  }
+
+  .advices__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 33%;
+  }
+
+  .advices__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .advices__text--mobile {
+    display: none;
+  }
+
+  .advices__item--food {
+    margin-top: 6px;
+  }
+
+
+  .advices__item--gift {
+    order: 1;
+  }
+
+  .advices__item--house {
+    margin-top: 3px;
+  }
+
+  .advices__item-icon--house {
+    width: 75px;
+    height: 72px;
+  }
+
+  .advices__item-icon--burger {
+    width: 77px;
+    height: 68px;
+  }
+
+  .advices__item-icon--gift {
+    width: 64px;
+    height: 75px;
+  }
+  .advices__picture {
+    margin-bottom: 31px;
+  }
+
+  .advices__text--tablet {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  //Второй пункт
+
+  .features__second-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features__description-second {
+    order: 1;
+    width: 33%;
+  }
+
+  .feature__text--second-mobile {
+    display: none;
+  }
+
+  .features__second-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: @bg-color-intro;
+    height: 256px;
+    color: @white;
+  }
+
+  .features__title-main--second {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .features__number-second {
+    margin-top: 18px;
+    margin-bottom: 0px;
+  }
+
+  .feature__text--second {
+    margin-top: 32px;
+    margin-bottom: 50px;
+  }
+
+  .features__image {
+    min-width: 512px;
+    height: 256px;
+  }
+
+  //Третий, четвертый и пятый пункты
+
+  .features__additional-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 256px;
+    background-color: @gray;
+    margin-top: -5px;
+  }
+
+  .main-index__line-wrapper {
+    display: none;
+  }
+
+.features__additional-mobile {
+  display: none;
+}
+  .features-additional__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 33.3%;
+  }
+
+  .features__additional-number,
+  .features__additional-text {
+    color: @text-basic;
+  }
+
+  .features-additional__title {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .features__additional-number {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .features__additional-tablet {
+    //margin-top: 32px;
+    margin-bottom: 0px;
+  }
+
+  .advices {
+    margin-top: 57px;
+    margin-bottom: 67px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  .features__list {
+    padding-top: 57px;
+    margin-top: -2px;
+    background-color: #ffffff;
+
+  }
+  .advices {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .advices__text {
+    padding-bottom: 67px;
+    margin-bottom: 0px;
+
+  }
+}

@@ -1,29 +1,44 @@
-var popupMenuBurger = document.querySelector(".page-header__burger");
-var popupMenu = document.querySelector(".page-header__main-nav");
-var popupCloseMenu = document.querySelector(".main-nav__close");
 
 
-//Вызов меню в мобильной версии
+//Переменные для окна отправки формы
 
-popupMenuBurger.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	popupMenu.classList.add("popup-show");
+var popupSuccess = document.querySelector(".popup--success");
+var buttonSend = document.querySelector(".review__button");
+var closeSuccess = document.querySelector(".popup__close--success");
+var popupFailure = document.querySelector(".popup--failure");
+var closeFailure = document.querySelector(".button--close-failure");
+var review = document.querySelector(".review");
+var reviewName = review.querySelector("[name=user-name]");
+var reviewSurname = review.querySelector("[name=user-surname]");
+var reviewPatronymic = review.querySelector("[name=patronymic]");
+var userTel = review.querySelector("[name=user-tel]");
+var userMail = review.querySelector("[name=user-mail]");
+var message = review.querySelector("[name=message]");
+var empty = "";
 
-	popupMenu.classList.add("popup-open");
+
+//Вызов всплывающих окошек
+
+buttonSend.addEventListener("click", function(evt) {
+  if (reviewName.value === empty || reviewSurname.value === empty || reviewPatronymic.value === empty || userTel.value === empty || userMail.value === empty || message.value === empty) {
+    evt.preventDefault();
+    popupFailure.classList.add("modal-show");
+  }
 
 });
 
-popupCloseMenu.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	popupMenu.classList.remove("popup-show");
+closeSuccess.addEventListener("click", function(evt){
+  evt.preventDefault();
+  popupSuccess.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function(evt) {
-	if (evt.keyCode === 27) {
-		if (popupMenu.classList.contains("popup-show")) {
-			evt.preventDefault();
-			popupMenu.classList.remove("popup-show");
-		}
-	}
+closeFailure.addEventListener("click", function(evt){
+  evt.preventDefault();
+  popupFailure.classList.remove("modal-show");
 });
+
+
+
+
+
 

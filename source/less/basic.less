@@ -5,7 +5,33 @@ text-transform: uppercase;
 
 }
 
+@media (max-width:768px) {
 .container {
 width: @mobile-width-container;
 margin-left: 20px;
 }
+
+}
+
+@media (min-width: 768px), handlend and (orientation:landscape) {
+  .container-photo,
+  .container-form {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  .container-photo {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .container-form {
+    margin-right: 120px;
+    margin-left: 120px;
+  }
+}
+
+

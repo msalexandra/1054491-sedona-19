@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>Седона</title>
   </head>
   <body>
 
+
+    <div class="desktop-wrapper">
+      <div class="desktop-wrapper-container desktop-wrapper-container--form">
+
     <header class="page-header">
-      <div class="header-wrapper">
-
-        <nav class="main-nav page-header__main-nav nav-index">
-         <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
-
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="photo.html">Фото и видео</a>
-              </li>
-              <li class="main-nav__item main-nav__item--active">
-                <a href="">Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="htmlacademy.ru">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-          <div class="page-header__logo-burger">
-
-          <a class="logo page-header__logo" href="index.html">
-            <img  class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="83">
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo logo">
+            <picture class="page-header__logo-picture">
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logotype-mobile.svg" alt="Герб города Седона">
+            </picture>
           </a>
-          <div class="burger-menu">
-          <button class="main-nav__toggle" type="button" title="Открыть меню" aria-label="Открыть меню"></button>
-          </div>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
+          </button>
         </div>
-
-      </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link"  href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
 
     <main class="page-main main-form">
       <h1 class="visually-hidden">Оставьте отзыв</h1>
 
-      <div class="page-main__wrapper-intro page-main__intro-form">
-        <img class="container page-main__text-form" src="img/SEDONA.svg" width="229" height="39" alt="Седона">
-        <img class="page-main__triangle-form" src="img/intro-triangle.svg" width="320" height="26">
+
+     <div class="page-main__wrapper-intro page-main__intro-photo page-main__intro-form">
+
+        <div class="page-main__wrapper-photo page-main__wrapper-form">
+
+          <picture class="page-main__picture-photo">
+            <source media="(min-width: 1200px)" srcset="img/text-sedona--desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/SEDONA-tablet.svg">
+          <img class="container page-main__text-photo page-main__text-form" src="img/SEDONA.svg" width="229" height="39" alt="Седона">
+        </picture>
+        </div>
+
+        <picture class="page-main__triangle-photo">
+          <source media="(min-width: 1200px)" srcset="img/intro-triangle--desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/intro-triangle-tablet.svg">
+          <img class="page-main__triangle-image-photo page-main__triangle-form" src="img/intro-triangle.svg">
+        </picture>
       </div>
 
+
         <header class="container page-main__header-wrapper--form">
-          <b class="main-form__heading"> Оставьте свой отзыв </b>
-          <p class="main-form__text-basic">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <b class="main-form__heading main-form__heading--mobile"> Оставьте свой отзыв </b>
+          <p class="main-form__text-basic main-form__text-basic--mobile">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+          <b class="main-form__heading main-form__heading--tablet"> Оставьте свой отзыв </b>
+          <p class="main-form__text-basic main-form__text-basic--tablet">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <br> а также о посещенных вами достопримечательностях</p>
         </header>
 
 
@@ -63,24 +79,25 @@
         <hr class="line__horizon form-line">
       </div>
 
-      <section class="review">
+      <section class="review container-form">
 
+        <div class="review__form-wrapper">
         <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="container review__wrapper-contacts">
-            <h3 class="review__title">Представьтесь</h3>
+            <h3 class="review__title">Представьтесь:</h3>
 
             <div class="review__name">
-              <label for="name">Имя*:</label>
+              <label for="name" class="name-label">Имя*:</label>
               <input id="name" type="text" name="user-name" placeholder="Петр" required>
             </div>
 
             <div class="review__surname">
-              <label for="surname">Фамилия*:</label>
+              <label for="surname" class="name-label">Фамилия*:</label>
               <input id="surname" type="text" name="user-surname" placeholder="Иванов" required>
             </div>
 
             <div class="review__patronymic">
-              <label for="patronymic">Отчество:</label>
+              <label for="patronymic" class="name-label">Отчество:</label>
               <input id="patronymic" type="text" name="user-patronymic" placeholder="Александрович">
             </div>
 
@@ -91,10 +108,20 @@
           </div>
 
           <div class="container review__wrapper-number">
+
+            <div class="contacts--tablet">
+              <hr class="form-line--tablet">
+
             <h3 class="review__title review__title-number ">Контактная информация</h3>
 
+            <hr class="form-line--tablet">
+
+          </div>
+
+          <div class="review__numbers--desktop">
             <div class="review__number">
-              <label for="number">Контактный телефон*:</label>
+              <label for="number" class="mobile-tablet-label">Контактный телефон*:</label>
+              <label for="number" class="desktop-label">Телефон*:</label>
               <input id="number" type="tel" name="user-tel" placeholder="Введите телефон" required>
             </div>
 
@@ -102,7 +129,7 @@
               <label for="mail">Электронная почта*:</label>
               <input id="mail" type="text" name="user-mail" placeholder="Введите e-mail" required>
             </div>
-
+          </div>
           </div>
 
           <div class="line-wrapper-mail line">
@@ -110,7 +137,7 @@
           </div>
 
           <div class="container review__filter">
-            <h3 class="review__filter-title">Ваше общее впечатление</h3>
+            <h3 class=" review__title review__filter-title">Ваше общее впечатление:</h3>
 
             <div class="review__impression-buttons">
               <fieldset class="review__impression filter">
@@ -129,6 +156,11 @@
                   </li>
                 </ul>
               </fieldset>
+
+              <div class="line--tablet">
+
+              </div>
+
             </div>
 
           </div>
@@ -139,11 +171,19 @@
 
           <div class="container review__attractions">
 
-            <h3 class="review__title attractions-title">Посещенные достопримечательности</h3>
+            <div class="contacts--tablet review--tablet">
+
+              <hr class="form-line--tablet">
+
+            <h3 class="review__title attractions-title">Посещенные <br> достопримечательности</h3>
+
+            <hr class="form-line--tablet">
+
+            </div>
 
             <fieldset class=" review__attractions-filter filter">
               <ul class="review__list attractions-list">
-                <li class="review__item attractions-item checkbox-checked">
+                <li class="review__item attractions-item attractions-item--first checkbox-checked">
                   <input type="checkbox" id="checkbox-item-1" name="bridge" checked>
                   <label for="checkbox-item-1">Мост Дьявола</label>
                 </li>
@@ -158,7 +198,7 @@
                   <label for="checkbox-item-3">Слайд-парк</label>
                 </li>
 
-                <li class="review__item attractions-item checkbox-unchecked">
+                <li class="review__item attractions-item checkbox-unchecked checkbox-end">
                   <input type="checkbox" id="checkbox-item-4" name="rocks" unchecked>
                   <label for="checkbox-item-4">Красные скалы</label>
                 </li>
@@ -171,19 +211,62 @@
           </div>
 
           <div class="container emotions">
+
+            <div class="contacts--tablet review--tablet">
+
+              <hr class="form-line--tablet">
             <h3 class="emotions__title">Опишите свои эмоции:</h3>
-            <input id="emotions" type="text" name="emotions" placeholder="Опишите подробно все свои эмоции">
+            <hr class="form-line--tablet">
+            </div>
+
+            <textarea class="form-emotions__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+            <!-- <input id="emotions" type="text" name="emotions" placeholder="Опишите подробно все свои восторги"> -->
           </div>
 
           <div class="container review__button-wrapper">
             <button class="button button--blue review__button" type="submit">Отправить отзыв</button>
+            <p class="signature signature--tablet">* — обязательные поля</p>
           </div>
+
+      <div class="popup  popup--success">
+            <div class="popup__text-container">
+              <h2 class="popup__heading">Ваш отзыв отправлен!</h2>
+
+              <p class="popup__text popup__text--mobile">Спасибо за ваше участие, ваш <br> отзыв уже поступил к нам. <br>
+                В ближайшее время мы опубликуем его на сайте.</p>
+
+              <p class="popup__text popup__text--tablet">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>
+                  В ближайшее время мы опубликуем его на сайте.</p>
+            </div>
+
+            <div class="popup__button-container">
+              <button class="button button--blue button--popup-close popup__close--success">Закрыть окно</button>
+            </div>
+          </div>
+
+        <div class="popup popup--failure">
+            <div class="popup__text-container text-container--failure">
+              <h2 class="popup__heading">Что-то пошло не так!</h2>
+
+              <p class="popup__text popup__text--mobile">Проверьте поля, выделенные <br> красным, скорее всего вы <br> забыли их заполнить</p>
+
+              <p class="popup__text popup__text--tablet">Проверьте поля, выделенные красным, <br> скорее всего вы забыли их заполнить</p>
+            </div>
+
+            <div class="popup__button-container popup__button-container--failure">
+              <button class="button button--blue button--popup-close button--close-failure">ок</button>
+            </div>
+
+          </div>
+
         </form>
+        </div>
       </section>
+
     </main>
 
     <footer class="footer footer--index footer--form">
-      <div class="footer--index-wrapper container">
+      <div class="footer--index-wrapper container container-form container-form--footer">
       <div class="footer__wrapper-hashtag">
         <b class="footer__hashtag">#visitsedona</b>
       </div>
@@ -193,27 +276,27 @@
           <li class="footer__link-item footer__twitter">
             <a class="button button--blue button-social" href="http://twitter.com" aria-label="twitter">
               <div class="button-social__wrapper">
-                <svg class="button-social__icon footer_icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
-                  <image id="icon-twitter.svg" width="18" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAQAAACI04Q8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4RORWCahH/AAAAm0lEQVQoz32RURWCQBRE7yHBRiACEYyADYhABBpwTEAENAERtAE2gAbXDxTdFbj7OztnZh4GgySvcVJ1MFhaYePdIpJ0xrTYqJP1KilMGTNmINAyUpEDJTEPzunPyTHxaQT7d8g9TpJxI3DEDFttotAiGXDhuetzhcUpHKTKRZZtyr9Oa7OvaFvWfQbGftPl9wZgsEq2Gqzjo78AGIVMdBRlPCcAAAAASUVORK5CYII="/>
-              </svg>
+                <svg class="button-social__icon footer_icon-twitter" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z" fill="white"/>
+                  </svg>
               </div>
             </a>
           </li>
           <li class="footer__link-item footer__facebook">
             <a class="button button--blue button-social" href="http://facebook.com" aria-label="Facebook">
               <div class="button-social__wrapper">
-                <svg class="button-social__icon footer_icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18"width="17" height="15">
-                  <image id="icon-facebook.svg" width="9" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAQAAAAjiTzDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4ROh9JkqsiAAAAW0lEQVQY07WNQRGAMBADt0wFVEolnCRwAMpAAg6QgITwuMK0ffXD/rKTSRBCaNalgotVFa7uWkUgk3A2DkDIvoIJETEyLwmDINExwYAKMmAvaeH0R9rHsa2f1QOaa0/UgAJXogAAAABJRU5ErkJggg=="/>
-                </svg>
+                <svg class="button-social__icon footer_icon-facebook" width="9" height="19" viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z" fill="white"/>
+                  </svg>
             </div>
             </a>
           </li>
           <li class="footer__link-item footer__youtube">
             <a class="button button--blue button-social" href="http://youtube.com" aria-label="YouTube">
               <div class="button-social__wrapper">
-                <svg class="button-social__icon footer_icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="14" viewBox="0 0 20 14">
-                  <image id="icon-youtube.svg" width="20" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAQAAACFzfR7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCR4SBBHtqSMBAAAAZklEQVQoz63SQRGAMAxE0V8GAZWAhErAQpWABFDaOigOljNtZpoDe8y8Q7ITlFQ0S1EKKmzMU4PkYMDiYyPM3Dym7NbehaIutf4eC2Jh946rMYucHMTvsK8nk0ZkwT96rC5X8T7FC+C9oZoMbr76AAAAAElFTkSuQmCC"/>
-                </svg>
+                <svg class="button-social__icon footer_icon-youtube" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z" fill="white"/>
+                  </svg>
               </div>
             </a>
           </li>
@@ -223,11 +306,20 @@
       <div class="footer__developer developer">
         <span class="footer__copyright-text">Разработано</span>
         <a class="footer__copyright-link" href="https://htmlacademy.ru" aria-label="HTML Academy">
-          <img  class="footer__logo-academy" src="img/htmlacademy1.svg" alt="Логотип Академии" width="27" height="34">
+          <svg class="footer__logo-academy" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            </svg>
         </a>
       </div>
       </div>
 
     </footer>
+
+  </div>
+</div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+
   </body>
   </html>
